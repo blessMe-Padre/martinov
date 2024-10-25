@@ -1,0 +1,14 @@
+.title {
+    color: red;
+}
+
+.wrapper {
+    .title {
+        color: white;
+    }
+
+    &__item {
+        color: blue;
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,44 @@
+.button {
+    background-color: var(--gray);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--white);
+    padding: 10px 30px;
+}
+
+.menu-button {
+    .menu-button-desktop {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .menu-button-mobile {
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.menu-button {
+    .menu-button-img-close {
+        display: none;
+    }
+}
+
+.menu-button.is-active {
+    .menu-button-img-catalog {
+        display: none;
+    }
+
+    .menu-button-img-close {
+        display: flex;
+    }
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Импорт кастомных стилей для компонентов */
+@import './css/mixin.scss';
+@import './css/blocks/title.scss';
+@import './css/blocks/header.scss';
+@import './css/blocks/social-icon.scss';
+@import './css/blocks/button.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Переменные */
+:root {
+  --black: #292e35;
+  --white: #fff;
+  --light-gray: #f3f3f8;
+  --gray: #9799a0;
+  --dark-gray: #44464c;
+}
+
+// @font-face {
+//   font-family: 'Bebas Neue';
+//   src: url('./fonts/BebasNeueBold.woff2');
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Bebas Neue';
+//   src: url('./fonts/BebasNeueRegular.woff2');
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Manrope", sans-serif;
+    color: #262626;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1480px]
+  }
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+/* Прочие классы */
+.lock {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
+}
