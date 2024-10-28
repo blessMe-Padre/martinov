@@ -42,3 +42,59 @@
         display: flex;
     }
 }
+
+.anim-button {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    width: 308px;
+    height: 60px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._anim-button span {
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+._anim-button span.even.animate {
+    animation: moveUp 0.2s ease-out forwards;
+}
+
+._anim-button span.odd.animate {
+    animation: moveDown 0.2s ease-out forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
