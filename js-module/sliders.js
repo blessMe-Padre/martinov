@@ -82,8 +82,7 @@ export const initSlider = () => {
     if (brandsSlider) {
         const brandsSlider = new Swiper('.brands-section-swiper', {
             loop: true,
-            spaceBetween: 20,
-
+            // spaceBetween: 20,
             breakpoints: {
                 320: {
                     slidesPerView: 2,
