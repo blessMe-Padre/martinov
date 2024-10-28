@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Импорт кастомных стилей для компонентов */
-// @include adaptiv-value("font-size", 16, 13, 1);
+
 @import './css/mixin.scss';
 @import './css/blocks/title.scss';
 @import './css/blocks/header.scss';
@@ -11,6 +11,7 @@
 @import './css/blocks/hero.scss';
 @import './css/blocks/swiper.css';
 @import './css/blocks/custom-swiper-style.scss';
+@import './css/blocks/action-links-section.scss';
 
 @tailwind base;
 @tailwind components;

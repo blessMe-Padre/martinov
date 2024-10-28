@@ -14,12 +14,13 @@
     flex-direction: column;
     gap: 10px;
     @include adaptiv-value("padding-top", 80, 40, 1);
-    @include adaptiv-value("padding-bottom", 80, 40, 1);
+
+    & {
+        @include adaptiv-value("padding-bottom", 80, 40, 1);
+    }
 }
 
 .hero__description-title {
-    @include adaptiv-value("font-size", 60, 30, 1);
-
     text-transform: uppercase;
     color: #fff;
 
@@ -27,6 +28,7 @@
     font-weight: 500;
 
     line-height: 1.2;
+    @include adaptiv-value("font-size", 60, 30, 1);
 
     span {
         font-family: "PT Serif", sans-serif;
