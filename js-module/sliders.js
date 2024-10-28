@@ -20,7 +20,7 @@ export const initSlider = () => {
         });
     }
 
-    // слайдер "Категории"
+    // слайдер "Новинки"
     const categorySlider = document.querySelector('.category-section-swiper');
     if (categorySlider) {
         const categorySlider = new Swiper('.category-section-swiper', {
@@ -45,6 +45,35 @@ export const initSlider = () => {
             navigation: {
                 nextEl: '.swiper-button-next-new',
                 prevEl: '.swiper-button-prev-new',
+            },
+        });
+    }
+
+    // слайдер "Популярное"
+    const popularSlider = document.querySelector('.popular-section-swiper');
+    if (popularSlider) {
+        const categorySlider = new Swiper('.popular-section-swiper', {
+            loop: true,
+            spaceBetween: 20,
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                340: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1023: {
+                    slidesPerView: 4,
+                },
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next-popular',
+                prevEl: '.swiper-button-prev-popular',
             },
         });
     }
