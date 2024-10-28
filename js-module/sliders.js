@@ -77,4 +77,35 @@ export const initSlider = () => {
             },
         });
     }
+    // слайдер "Бренды"
+    const brandsSlider = document.querySelector('.brands-section-swiper');
+    if (brandsSlider) {
+        const brandsSlider = new Swiper('.brands-section-swiper', {
+            loop: true,
+            spaceBetween: 20,
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                },
+                340: {
+                    slidesPerView: 2,
+                },
+                450: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 5,
+                },
+                1023: {
+                    slidesPerView: 6,
+                },
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next-brands',
+                prevEl: '.swiper-button-prev-brands',
+            },
+        });
+    }
 }
