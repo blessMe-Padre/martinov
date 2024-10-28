@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+// // @include adaptiv-value("font-size", 16, 13, 1);
 /* Импорт кастомных стилей для компонентов */
 
 @import './css/mixin.scss';
@@ -12,6 +12,8 @@
 @import './css/blocks/swiper.css';
 @import './css/blocks/custom-swiper-style.scss';
 @import './css/blocks/action-links-section.scss';
+@import './css/blocks/category-section.scss';
+@import './css/blocks/card.scss';
 
 @tailwind base;
 @tailwind components;
@@ -97,4 +99,17 @@ a {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-height: 100vh;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.1);
 }

@@ -1,14 +1,7 @@
 .title {
-    color: red;
-}
-
-.wrapper {
-    .title {
-        color: white;
-    }
-
-    &__item {
-        color: blue;
-        font-size: 40px;
-    }
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #282a2d;
+    @include adaptiv-value("font-size", 60, 30, 1);
 }
