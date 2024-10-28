@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Торговый дом 888</title>
 </head>
 
@@ -55,7 +56,7 @@
           <div class="search-form">
             <p>Поиск по товарам...</p>
           </div>
-          
+
           <div class="header__callback"><a href="#">Обратная связь</a></div>
           <div class="header__account-wrapper">
             <div class="header__cart-button header-button">
@@ -164,10 +165,53 @@
       </header>
 
       <main>
+        <div class="w-0 min-w-[100%] relative">
+          <div class="hero-swiper swiper">
+              <div class="hero-wrapper swiper-wrapper justify-stretch">
+
+                  <div class="swiper-slide h-auto">
+                          <picture>
+                            <source srcset="./img/slides/image-1.webp" media="(min-width: 550px)" />
+                            <img class=""
+                                src="./img/slides/image-1-sm.webp" width="100%" height="600"
+                                alt="image">
+                        </picture>
+                  </div>
+
+                  <div class="swiper-slide h-auto">
+                    <picture>
+                      <source srcset="./img/slides/image-1.webp" media="(min-width: 550px)" />
+                      <img class=""
+                          src="./img/slides/image-1-sm.webp" width="100%" height="600"
+                          alt="image">
+                  </picture>
+                  </div>
+
+                  <div class="swiper-slide h-auto">
+                    <picture>
+                      <source srcset="./img/slides/image-1.webp" media="(min-width: 550px)" />
+                      <img class=""
+                          src="./img/slides/image-1-sm.webp" width="100%" height="600"
+                          alt="image">
+                  </picture>
+                  </div>
+
+              </div>
+              <div class="swiper-button-wrapper">
+                  <!-- <div class="swiper-button-prev"></div> -->
+                  <div class="swiper-pagination"></div>
+                  <!-- <div class="swiper-button-next"></div> -->
+              </div>
+          </div>
+      </div>
 
       </main>
       <footer>footer</footer>
     </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>   -->
+  <script src="/vendor/baguettebox.js"></script>
+  <script src="/vendor/smoothscroll.js"></script>
+  <script src="/vendor/swiper-bundle.min.js"></script>
   <script type="module" src="/main.js"></script>
 </body>
 

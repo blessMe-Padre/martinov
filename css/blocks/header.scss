@@ -146,6 +146,7 @@
     min-width: 400px;
     min-height: 400px;
     padding: 40px;
+    z-index: 50;
 
     opacity: 0;
     visibility: hidden;
@@ -166,6 +167,7 @@
     min-width: 800px;
     min-height: 400px;
     padding: 40px;
+    z-index: 40;
 
     opacity: 0;
     visibility: hidden;
