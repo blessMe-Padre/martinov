@@ -22,9 +22,9 @@
     font-family: "Manrope", sans-serif;
     font-weight: 600;
     color: #292e35;
-    @include adaptiv-value("font-size", 20, 16, 1);
     text-wrap: nowrap;
     white-space: nowrap;
+    @include adaptiv-value("font-size", 20, 16, 1);
 }
 
 .contacts__slim-text {
