@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 // // @include adaptiv-value("font-size", 16, 13, 1);
-// $ npm run dev -- --host
+// npm run dev -- --host
 /* Импорт кастомных стилей для компонентов */
 
 @import './css/mixin.scss';
@@ -30,6 +30,20 @@
   --light-gray: #f3f3f8;
   --gray: #9799a0;
   --dark-gray: #44464c;
+}
+
+/* Директивы data-scroll */
+
+[data-scroll] {
+  transition: opacity 1s
+}
+
+[data-scroll=in] {
+  opacity: 1
+}
+
+[data-scroll=out] {
+  opacity: 0
 }
 
 // @font-face {

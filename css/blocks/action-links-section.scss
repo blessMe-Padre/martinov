@@ -10,6 +10,7 @@
 .action-links-section__item {
     position: relative;
 
+
     p {
         position: absolute;
         top: 20px;
@@ -20,7 +21,39 @@
         text-transform: uppercase;
         color: #fff;
         @include adaptiv-value("font-size", 30, 18, 1);
+
     }
+
+    &::before {
+        content: ' ';
+        position: absolute;
+        top: 70px;
+        left: 40px;
+        width: 1px;
+        height: 60%;
+        background-color: #ffffff;
+        z-index: 1;
+    }
+
+    &::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+}
+
+.action-links-section__item:hover::after {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.action-links-section__item:active::after {
+    backdrop-filter: blur(100px);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 @media (max-width: 560px) {
