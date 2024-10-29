@@ -15,6 +15,8 @@
 @import './css/blocks/action-links-section.scss';
 @import './css/blocks/category-section.scss';
 @import './css/blocks/card.scss';
+@import './css/blocks/info.scss';
+@import './css/blocks/contacts.scss';
 
 @tailwind base;
 @tailwind components;
@@ -113,4 +115,9 @@ a {
 
 .image-wrapper:hover img {
   transform: scale(1.1);
+}
+
+.border-left-block {
+  height: 40px;
+  border-left: 1px solid var(--white);
 }
